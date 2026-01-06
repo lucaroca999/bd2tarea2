@@ -17,7 +17,9 @@ Extensión de una API REST utilizando Litestar y SQLAlchemy. Se han implementado
 | 8 | Datos Iniciales | ✅ Cumplido | Script de seed incluido y dump SQL generado. |
 
 ## Ejecución
-1. Instalar dependencias: `pip install -e .`
-2. Migraciones: `alembic upgrade head`
-3. Poblar datos (opcional): `python seed_data.py`
-4. Correr servidor: `litestar run --reload`
+1. Crear entorno virtual: `python3 -m venv .venv   ->    source .venv/bin/activate`
+2. Instalar dependencias: `pip install -e .`
+3. Crear la base de datos con usuario actual: `createdb bd2_library_db`
+4. Migraciones: `alembic upgrade head`
+5. Poblar datos (opcional): `python seed_data.py`
+6. Correr servidor: `litestar run --reload`
